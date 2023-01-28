@@ -14,17 +14,18 @@ let count = 0;
 let defaultImage = "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg";
 console.log(defaultImage);
 let allImageArray = [
-  ".//assets/images/images-1.jpg",
-  ".//assets/images/images-2.jpg",
-  ".//assets/images/images-3.jpg",
-  ".//assets/images/images-3.jpg",
-  ".//assets/images/images-4.jpg",
-  ".//assets/images/images-5.jpeg",
-  ".//assets/images/images-2.jpg",
-  ".//assets/images/images-1.jpg",
-  ".//assets/images/images-4.jpg",
-  ".//assets/images/images-5.jpeg",
+  './/assets/images/images-1.jpg',
+  './/assets/images/images-2.jpg',
+  './/assets/images/images-3.jpg',
+  './/assets/images/images-3.jpg',
+  './/assets/images/images-4.jpg',
+  './/assets/images/images-5.jpeg',
+  './/assets/images/images-2.jpg',
+  './/assets/images/images-1.jpg',
+  './/assets/images/images-4.jpg',
+  './/assets/images/images-5.jpeg',
 ];
+console.log(allImageArray)
 let newAllImageArray1 = [
   ".//assets/images/images-3.jpg",
   ".//assets/images/images-1.jpg",
