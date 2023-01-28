@@ -12,7 +12,7 @@ let imageCode;
 let imageCodeArray = [];
 let count = 0;
 let defaultImage = "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg";
-// console.log(defaultImage);
+console.log(defaultImage);
 let allImageArray = [
   "https://ullashhh.github.io/Khalifa_game/assets/images/images-1.jpg",
   "https://ullashhh.github.io/Khalifa_game/assets/images/images-2.jpg",
@@ -25,6 +25,17 @@ let allImageArray = [
   "https://ullashhh.github.io/Khalifa_game/assets/images/images-4.jpg",
   "https://ullashhh.github.io/Khalifa_game/assets/images/images-5.jpeg",
 ];
+
+console.log(allImageArray[0]);
+console.log(allImageArray[1]);
+console.log(allImageArray[2]);
+console.log(allImageArray[3]);
+console.log(allImageArray[4]);
+console.log(allImageArray[5]);
+console.log(allImageArray[6]);
+console.log(allImageArray[7]);
+console.log(allImageArray[8]);
+console.log(allImageArray[9]);
 let newAllImageArray1 = [
   "https://ullashhh.github.io/Khalifa_game/assets/images/images-3.jpg",
   "https://ullashhh.github.io/Khalifa_game/assets/images/images-1.jpg",
