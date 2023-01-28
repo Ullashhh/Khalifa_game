@@ -60,16 +60,17 @@ retryBtn.addEventListener("click", () => {
 
 function winGame() {
   if (
-    images[0].src !== defaultImage &&
-    images[1].src !== defaultImage &&
-    images[2].src !== defaultImage &&
-    images[3].src !== defaultImage &&
-    images[4].src !== defaultImage &&
-    images[5].src !== defaultImage &&
-    images[6].src !== defaultImage &&
-    images[7].src !== defaultImage &&
-    images[8].src !== defaultImage &&
-    images[9].src !== defaultImage
+    images[0].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    images[1].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    images[2].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    images[3].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    images[4].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    images[5].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    images[6].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    images[7].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    images[8].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    images[9].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg"
+    
   ) {
     winMsg.classList.remove("msg-hide");
     retryBtn.classList.remove("msg-hide");
