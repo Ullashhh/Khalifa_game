@@ -10,7 +10,9 @@ let retryBtn = document.getElementById("retry-btn");
 let winMsg = document.querySelector(".win-msg");
 let imageCode;
 let imageCodeArray = [];
+let count = 0;
 let defaultImage = "./assets/images/photo-1622014402888-e78d0fd790d0.jpeg";
+console.log(defaultImage);
 let allImageArray = [
   ".//assets/images/images-1.jpg",
   ".//assets/images/images-2.jpg",
@@ -23,7 +25,42 @@ let allImageArray = [
   ".//assets/images/images-4.jpg",
   ".//assets/images/images-5.jpeg",
 ];
-let newAllImageArray = [];
+let newAllImageArray1 = [
+  ".//assets/images/images-3.jpg",
+  ".//assets/images/images-1.jpg",
+  ".//assets/images/images-4.jpg",
+  ".//assets/images/images-4.jpg",
+  ".//assets/images/images-5.jpeg",
+  ".//assets/images/images-2.jpg",
+  ".//assets/images/images-1.jpg",
+  ".//assets/images/images-3.jpg",
+  ".//assets/images/images-5.jpeg",
+  ".//assets/images/images-2.jpg",
+];
+let newAllImageArray2 = [
+  ".//assets/images/images-2.jpg",
+  ".//assets/images/images-5.jpeg",
+  ".//assets/images/images-1.jpg",
+  ".//assets/images/images-1.jpg",
+  ".//assets/images/images-3.jpg",
+  ".//assets/images/images-4.jpg",
+  ".//assets/images/images-5.jpeg",
+  ".//assets/images/images-2.jpg",
+  ".//assets/images/images-3.jpg",
+  ".//assets/images/images-4.jpg",
+];
+let newAllImageArray3 = [
+  ".//assets/images/images-4.jpg",
+  ".//assets/images/images-3.jpg",
+  ".//assets/images/images-2.jpg",
+  ".//assets/images/images-2.jpg",
+  ".//assets/images/images-1.jpg",
+  ".//assets/images/images-5.jpeg",
+  ".//assets/images/images-3.jpg",
+  ".//assets/images/images-4.jpg",
+  ".//assets/images/images-1.jpg",
+  ".//assets/images/images-5.jpeg",
+];
 
 function tryAgain() {
   images[0].src = defaultImage;
@@ -53,37 +90,51 @@ function tryAgain() {
   btn[7].disabled = false;
   btn[8].disabled = false;
   btn[9].disabled = false;
+  if (count === 0) {
+    allImageArray = allImageArray;
+  } else if (count === 1) {
+    allImageArray = newAllImageArray1;
+  } else if (count === 2) {
+    allImageArray = newAllImageArray2;
+  } else if (count % 3 === 0) {
+    allImageArray = newAllImageArray3;
+  } else if (count % 2 === 0) {
+    allImageArray = newAllImageArray2;
+  } else if (count % 2 === 1) {
+    allImageArray = newAllImageArray3;
+  }
 }
 retryBtn.addEventListener("click", () => {
+  count++;
   tryAgain();
 });
 
 function winGame() {
   if (
-    images[0].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
-    images[1].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
-    images[2].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
-    images[3].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
-    images[4].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
-    images[5].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
-    images[6].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
-    images[7].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
-    images[8].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
-    images[9].src !== "http://127.0.0.1:5500/assets/images/photo-1622014402888-e78d0fd790d0.jpeg"
-    
+    images[0].src !==
+      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    images[1].src !==
+      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    images[2].src !==
+      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    images[3].src !==
+      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    images[4].src !==
+      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    images[5].src !==
+      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    images[6].src !==
+      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    images[7].src !==
+      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    images[8].src !==
+      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    images[9].src !==
+      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg"
   ) {
     winMsg.classList.remove("msg-hide");
     retryBtn.classList.remove("msg-hide");
     console.log(images[0].src);
-    console.log(images[1].src);
-    console.log(images[2].src);
-    console.log(images[3].src);
-    console.log(images[4].src);
-    console.log(images[5].src);
-    console.log(images[6].src);
-    console.log(images[7].src);
-    console.log(images[8].src);
-    console.log(images[9].src);
   }
 }
 
@@ -130,7 +181,7 @@ btn[1].addEventListener("click", () => {
   } else {
     images[1].src = allImageArray[1];
     let timeSet = setTimeout(() => {
-      images[1].src = defaultImage;;
+      images[1].src = defaultImage;
     }, 1000);
     if (
       pukArray[pukArray.length - 1] === "5555" &&
@@ -160,7 +211,7 @@ btn[2].addEventListener("click", () => {
   } else {
     images[2].src = allImageArray[2];
     let timeSet = setTimeout(() => {
-      images[2].src = defaultImage;;
+      images[2].src = defaultImage;
     }, 1000);
     if (
       pukArray[pukArray.length - 1] === "3333" &&
@@ -190,7 +241,7 @@ btn[3].addEventListener("click", () => {
   } else {
     images[3].src = allImageArray[3];
     let timeSet = setTimeout(() => {
-      images[3].src = defaultImage;;
+      images[3].src = defaultImage;
     }, 1000);
     if (
       pukArray[pukArray.length - 1] === "3333" &&
@@ -220,7 +271,7 @@ btn[4].addEventListener("click", () => {
   } else {
     images[4].src = allImageArray[4];
     let timeSet = setTimeout(() => {
-      images[4].src = defaultImage;;
+      images[4].src = defaultImage;
     }, 1000);
     if (
       pukArray[pukArray.length - 1] === "2222" &&
@@ -250,7 +301,7 @@ btn[5].addEventListener("click", () => {
   } else {
     images[5].src = allImageArray[5];
     let timeSet = setTimeout(() => {
-      images[5].src = defaultImage;;
+      images[5].src = defaultImage;
     }, 1000);
     if (
       pukArray[pukArray.length - 1] === "4444" &&
@@ -280,7 +331,7 @@ btn[6].addEventListener("click", () => {
   } else {
     images[6].src = allImageArray[6];
     let timeSet = setTimeout(() => {
-      images[6].src = defaultImage;;
+      images[6].src = defaultImage;
     }, 1000);
     if (
       pukArray[pukArray.length - 1] === "5555" &&
@@ -310,7 +361,7 @@ btn[7].addEventListener("click", () => {
   } else {
     images[7].src = allImageArray[7];
     let timeSet = setTimeout(() => {
-      images[7].src = defaultImage;;
+      images[7].src = defaultImage;
     }, 1000);
     if (
       pukArray[pukArray.length - 1] === "1111" &&
@@ -340,7 +391,7 @@ btn[8].addEventListener("click", () => {
   } else {
     images[8].src = allImageArray[8];
     let timeSet = setTimeout(() => {
-      images[8].src = defaultImage;;
+      images[8].src = defaultImage;
     }, 1000);
     if (
       pukArray[pukArray.length - 1] === "2222" &&
@@ -370,7 +421,7 @@ btn[9].addEventListener("click", () => {
   } else {
     images[9].src = allImageArray[9];
     let timeSet = setTimeout(() => {
-      images[9].src = defaultImage;;
+      images[9].src = defaultImage;
     }, 1000);
     if (
       pukArray[pukArray.length - 1] === "4444" &&
