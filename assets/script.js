@@ -11,55 +11,55 @@ let winMsg = document.querySelector(".win-msg");
 let imageCode;
 let imageCodeArray = [];
 let count = 0;
-let defaultImage = "./assets/images/photo-1622014402888-e78d0fd790d0.jpeg";
-console.log(defaultImage);
+let defaultImage = "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg";
+// console.log(defaultImage);
 let allImageArray = [
-  ".//assets/images/images-1.jpg",
-  ".//assets/images/images-2.jpg",
-  ".//assets/images/images-3.jpg",
-  ".//assets/images/images-3.jpg",
-  ".//assets/images/images-4.jpg",
-  ".//assets/images/images-5.jpeg",
-  ".//assets/images/images-2.jpg",
-  ".//assets/images/images-1.jpg",
-  ".//assets/images/images-4.jpg",
-  ".//assets/images/images-5.jpeg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-1.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-2.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-3.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-3.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-4.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-5.jpeg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-2.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-1.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-4.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-5.jpeg",
 ];
 let newAllImageArray1 = [
-  ".//assets/images/images-3.jpg",
-  ".//assets/images/images-1.jpg",
-  ".//assets/images/images-4.jpg",
-  ".//assets/images/images-4.jpg",
-  ".//assets/images/images-5.jpeg",
-  ".//assets/images/images-2.jpg",
-  ".//assets/images/images-1.jpg",
-  ".//assets/images/images-3.jpg",
-  ".//assets/images/images-5.jpeg",
-  ".//assets/images/images-2.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-3.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-1.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-4.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-4.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-5.jpeg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-2.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-1.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-3.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-5.jpeg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-2.jpg",
 ];
 let newAllImageArray2 = [
-  ".//assets/images/images-2.jpg",
-  ".//assets/images/images-5.jpeg",
-  ".//assets/images/images-1.jpg",
-  ".//assets/images/images-1.jpg",
-  ".//assets/images/images-3.jpg",
-  ".//assets/images/images-4.jpg",
-  ".//assets/images/images-5.jpeg",
-  ".//assets/images/images-2.jpg",
-  ".//assets/images/images-3.jpg",
-  ".//assets/images/images-4.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-2.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-5.jpeg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-1.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-1.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-3.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-4.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-5.jpeg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-2.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-3.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-4.jpg",
 ];
 let newAllImageArray3 = [
-  ".//assets/images/images-4.jpg",
-  ".//assets/images/images-3.jpg",
-  ".//assets/images/images-2.jpg",
-  ".//assets/images/images-2.jpg",
-  ".//assets/images/images-1.jpg",
-  ".//assets/images/images-5.jpeg",
-  ".//assets/images/images-3.jpg",
-  ".//assets/images/images-4.jpg",
-  ".//assets/images/images-1.jpg",
-  ".//assets/images/images-5.jpeg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-4.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-3.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-2.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-2.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-1.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-5.jpeg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-3.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-4.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-1.jpg",
+  "https://ullashhh.github.io/Khalifa_game/assets/images/images-5.jpeg",
 ];
 
 function tryAgain() {
@@ -111,27 +111,37 @@ retryBtn.addEventListener("click", () => {
 
 function winGame() {
   if (
-    images[0].src !==
-      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
-    images[1].src !==
-      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
-    images[2].src !==
-      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
-    images[3].src !==
-      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
-    images[4].src !==
-      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
-    images[5].src !==
-      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
-    images[6].src !==
-      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
-    images[7].src !==
-      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
-    images[8].src !==
-      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
-    images[9].src !==
-      "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg"
-  ) {
+    // images[0].src !==
+    //   "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    // images[1].src !==
+    //   "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    // images[2].src !==
+    //   "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    // images[3].src !==
+    //   "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    // images[4].src !==
+    //   "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    // images[5].src !==
+    //   "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    // images[6].src !==
+    //   "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    // images[7].src !==
+    //   "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    // images[8].src !==
+    //   "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg" &&
+    // images[9].src !==
+    //   "https://ullashhh.github.io/Khalifa_game/assets/images/photo-1622014402888-e78d0fd790d0.jpeg"
+    images[0].src !== defaultImage &&
+    images[1].src !== defaultImage &&
+    images[2].src !== defaultImage &&
+    images[3].src !== defaultImage &&
+    images[4].src !== defaultImage &&
+    images[5].src !== defaultImage &&
+    images[6].src !== defaultImage &&
+    images[7].src !== defaultImage &&
+    images[8].src !== defaultImage &&
+    images[9].src !== defaultImage 
+      ) {
     winMsg.classList.remove("msg-hide");
     retryBtn.classList.remove("msg-hide");
     console.log(images[0].src);
